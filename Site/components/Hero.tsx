@@ -28,7 +28,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
         <div className="flex flex-col justify-center max-w-2xl">
           <div className="overflow-hidden mb-4">
             <span className="block text-sm uppercase tracking-[0.4em] text-zinc-300 animate-slide-up">
-              Alfaiataria para suas Janelas
+              SOFISTICAÇÃO SOB MEDIDA
             </span>
           </div>
           
