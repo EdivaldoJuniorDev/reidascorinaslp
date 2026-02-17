@@ -54,11 +54,11 @@ const BeforeAfter: React.FC = () => {
           {/* Blackout Side (Bottom) */}
           <div className="absolute inset-0">
             <img 
-              src="https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?auto=format&fit=crop&q=80&w=2000" 
+              src="/img/components/before-after/after_daytime.png" 
               alt="Blackout After"
-              className="w-full h-full object-cover brightness-50"
+              className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-black/40"></div>
+
             <div className="absolute bottom-8 right-8 text-white">
               <span className="text-[10px] uppercase tracking-[0.3em] opacity-60">Sistema</span>
               <h4 className="text-2xl font-serif">100% Blackout</h4>
@@ -71,9 +71,9 @@ const BeforeAfter: React.FC = () => {
             style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
           >
             <img 
-              src="https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&q=80&w=2000" 
+              src="/img/components/before-after/before.png" 
               alt="Voil Before"
-              className="w-full h-full object-cover grayscale opacity-90"
+              className="w-full h-full object-cover"
             />
             <div className="absolute bottom-8 left-8 text-black">
               <span className="text-[10px] uppercase tracking-[0.3em] opacity-60">Suavidade</span>
