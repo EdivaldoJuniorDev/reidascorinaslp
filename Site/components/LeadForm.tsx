@@ -18,13 +18,26 @@ const LeadForm: React.FC<LeadFormProps> = ({ onSuccess }) => {
     e.preventDefault();
     setStatus('loading');
     
-    // Simulate API call
+    // Format message for WhatsApp
+    const message = `*Nova Solicitação de Orçamento*\n\n` +
+      `*Nome:* ${formData.nome}\n` +
+      `*WhatsApp:* ${formData.whatsapp}\n` +
+      `*E-mail:* ${formData.email}\n` +
+      `*Mensagem:* ${formData.mensagem || 'Sem mensagem adicional'}`;
+
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappUrl = `https://wa.me/5592984098700?text=${encodedMessage}`;
+
+    // Open WhatsApp in new tab
+    window.open(whatsappUrl, '_blank');
+
+    // Show success state
     setTimeout(() => {
       setStatus('success');
       if (onSuccess) {
         setTimeout(onSuccess, 2000);
       }
-    }, 1500);
+    }, 1000);
   };
 
   if (status === 'success') {
