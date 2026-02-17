@@ -54,7 +54,7 @@ const BeforeAfter: React.FC = () => {
           {/* Blackout Side (Bottom) */}
           <div className="absolute inset-0">
             <img 
-              src="/img/components/before-after/after_daytime.png" 
+              src="/img/components/before-after/after_daytime_refined.png" 
               alt="Blackout After"
               className="w-full h-full object-cover"
             />
