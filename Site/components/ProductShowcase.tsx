@@ -103,7 +103,7 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ onOpenModal }) => {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
           <div className="max-w-2xl">
             <span className="text-[10px] uppercase tracking-[0.4em] text-zinc-400 block mb-4">Portfólio de Soluções</span>
-            <h2 className="text-4xl md:text-6xl font-serif leading-tight">Nossa Coleção <br /><span className="italic">de Magnificência</span></h2>
+            <h2 className="text-4xl md:text-6xl font-serif leading-tight">Nossa Coleção </h2>
           </div>
           <div className="flex gap-4">
             <button 
