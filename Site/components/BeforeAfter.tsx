@@ -56,6 +56,8 @@ const BeforeAfter: React.FC = () => {
             <img 
               src="/img/components/before-after/after_daytime_refined.png" 
               alt="Blackout After"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
 
@@ -73,6 +75,8 @@ const BeforeAfter: React.FC = () => {
             <img 
               src="/img/components/before-after/before.png" 
               alt="Voil Before"
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
             <div className="absolute bottom-8 left-8 text-black">

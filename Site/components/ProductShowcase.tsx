@@ -135,7 +135,9 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ onOpenModal }) => {
               <img 
                 src={product.imageUrl} 
                 alt={product.name}
-                className="w-full h-full object-cover grayscale transition-all duration-1000 group-hover:grayscale-0 group-hover:scale-105"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors pointer-events-none"></div>
               

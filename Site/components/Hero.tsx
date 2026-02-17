@@ -15,6 +15,8 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
           loop 
           muted 
           playsInline
+          poster="/img/hero_poster.jpeg"
+          preload="metadata"
           className="w-full h-full object-cover opacity-60"
         >
           <source src="/video/hero-background.mp4" type="video/mp4" />
