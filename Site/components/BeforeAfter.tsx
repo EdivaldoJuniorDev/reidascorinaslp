@@ -53,13 +53,17 @@ const BeforeAfter: React.FC = () => {
         >
           {/* Blackout Side (Bottom) */}
           <div className="absolute inset-0">
-            <img 
-              src="/img/components/before-after/after_daytime_refined.png" 
-              alt="Blackout After"
-              loading="lazy"
-              decoding="async"
-              className="w-full h-full object-cover"
-            />
+            <picture>
+              <source srcSet="/img/components/before-after/after_daytime_refined.avif" type="image/avif" />
+              <source srcSet="/img/components/before-after/after_daytime_refined.webp" type="image/webp" />
+              <img 
+                src="/img/components/before-after/after_daytime_refined.png" 
+                alt="Blackout After"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover"
+              />
+            </picture>
 
             <div className="absolute bottom-8 right-8 text-white">
               <span className="text-[10px] uppercase tracking-[0.3em] opacity-60">Sistema</span>
@@ -72,13 +76,17 @@ const BeforeAfter: React.FC = () => {
             className="absolute inset-0"
             style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
           >
-            <img 
-              src="/img/components/before-after/before.png" 
-              alt="Voil Before"
-              loading="lazy"
-              decoding="async"
-              className="w-full h-full object-cover"
-            />
+            <picture>
+              <source srcSet="/img/components/before-after/before.avif" type="image/avif" />
+              <source srcSet="/img/components/before-after/before.webp" type="image/webp" />
+              <img 
+                src="/img/components/before-after/before.png" 
+                alt="Voil Before"
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-cover"
+              />
+            </picture>
             <div className="absolute bottom-8 left-8 text-black">
               <span className="text-[10px] uppercase tracking-[0.3em] opacity-60">Suavidade</span>
               <h4 className="text-2xl font-serif">Voil Natural</h4>

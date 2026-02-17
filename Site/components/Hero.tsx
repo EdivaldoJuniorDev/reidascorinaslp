@@ -15,7 +15,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenModal }) => {
           loop 
           muted 
           playsInline
-          poster="/img/hero_poster.jpeg"
+          poster="/img/hero_poster.webp"
           preload="metadata"
           className="w-full h-full object-cover opacity-60"
         >

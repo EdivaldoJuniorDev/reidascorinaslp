@@ -132,13 +132,17 @@ const ProductShowcase: React.FC<ProductShowcaseProps> = ({ onOpenModal }) => {
             className="flex-shrink-0 w-[85vw] md:w-[450px] snap-center group"
           >
             <div className="relative aspect-[4/5] bg-zinc-100 mb-8 overflow-hidden">
-              <img 
-                src={product.imageUrl} 
-                alt={product.name}
-                loading="lazy"
-                decoding="async"
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
+                  <picture>
+                    <source srcSet={product.imageUrl.replace(/\.(png|jpg|jpeg)$/, '.avif')} type="image/avif" />
+                    <source srcSet={product.imageUrl.replace(/\.(png|jpg|jpeg)$/, '.webp')} type="image/webp" />
+                    <img 
+                      src={product.imageUrl} 
+                      alt={product.name} 
+                      loading="lazy"
+                      decoding="async"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    />
+                  </picture>
               <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors pointer-events-none"></div>
               
               <div className="absolute top-6 left-6">
